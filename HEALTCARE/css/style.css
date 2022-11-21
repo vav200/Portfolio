@@ -1,0 +1,1633 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.main {
+  margin: 0 auto;
+}
+.main > .wrapper {
+  /* background: #f4fbfa; */
+  background: #40a2f826;
+  padding-bottom: 124px;
+}
+.header__wrapper {
+  padding: 16px 135px 18px 135px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: 0.7s all;
+  margin: 0 auto;
+}
+.header_scroll {
+  /* background: #050d1526; */
+  background: #183c61fd;
+  transition: 0.7s all;
+}
+.header__list {
+  width: 558px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-start;
+}
+.header__elem {
+  margin-right: 50px;
+  margin-top: 12px;
+}
+.header__elem:nth-child(4) {
+  margin-right: 47px;
+}
+.header__elem:nth-child(5) {
+  margin-right: 0;
+  margin-top: 0;
+}
+.logo {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 31.635px;
+  line-height: 47px;
+  letter-spacing: 1px;
+  color: #40a3f8;
+  margin-top: 9px;
+  padding-right: 10px;
+  background: url(../img/blue_point.png) no-repeat right bottom 11px;
+}
+.header__nav-link {
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6e5f5f;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  transition: 0.1s all linear;
+}
+.header__nav-link_scroll {
+  color: #dfd9d9;
+  opacity: 0.5;
+}
+.header__nav-link:hover,
+.header__nav-link:focus,
+.header__nav-link:active {
+  color: #40a3f8;
+  opacity: 1;
+}
+.header__button {
+  padding: 14px 28px 11px 28px;
+  background: #40a3f8;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14.997px;
+  line-height: 22px;
+  color: #ffffff;
+  border: none;
+  transition: 0.1s all linear;
+  cursor: pointer;
+}
+.header__button:hover,
+.header__button:active,
+.header__button:focus {
+  background: #5bb2ff;
+}
+
+.intro {
+  background: url(../img/pleased-young-female-doctor.png) no-repeat right bottom,
+    url(../img/image_shape.png) no-repeat right 70px top 65%,
+    url(../img/intro_shadow_down.png) no-repeat right bottom,
+    url(../img/intro_shadow_up.png) no-repeat right top,
+    url(../img/intro_shadow_left_up.png) no-repeat left top,
+    url(../img/intro-background.jpg) no-repeat right top;
+
+  height: 880px;
+  padding-top: 325px;
+  margin-bottom: 75px;
+}
+.intro__wrapper {
+  margin: 0 135px 0 135px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.intro__box-pic {
+  height: 366px;
+  width: 470px;
+  margin: 0 0 0 96px;
+  position: relative;
+}
+.intro__box-title {
+  margin: 0 auto 0 0;
+}
+.intro__title {
+  max-width: 482px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 70px;
+  color: #3e3e3e;
+  margin-bottom: 30px;
+  font-family: "Roboto";
+}
+.intro__title-blue {
+  color: #40a3f8;
+}
+.intro__subtitle {
+  max-width: 460px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(117, 117, 117, 0.46);
+  margin-bottom: 50px;
+}
+.intro__form-wrap {
+  width: 566px;
+  height: 86px;
+  background-color: white;
+  box-shadow: 0px 4px 22px rgba(228, 245, 252, 0.3);
+  border-radius: 8px;
+  padding: 13px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.input__wrap-box {
+  height: 100%;
+}
+.intro__input {
+  background: rgba(245, 246, 250, 0.52);
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  height: 100%;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.intro__input::placeholder {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.intro__button {
+  margin-left: auto;
+}
+.intro__input_findname {
+  width: 216px;
+}
+.intro__input_city {
+  width: 203px;
+}
+.intro__button {
+  border: 0;
+  width: 70px;
+  height: 60px;
+  background: #40a3f8 url(../img/search_button.png) no-repeat 50% 50%;
+  border-radius: 8px;
+}
+.intro__button:hover,
+.intro__button:active,
+.intro__button:focus {
+  background: #77befb url(../img/search_button.png) no-repeat 50% 50%;
+}
+.intro__disscus1 {
+  width: 70px;
+  height: 70px;
+  background: white url(../img/discussion1.png) no-repeat 50% 50%;
+  border-radius: 50%;
+  position: absolute;
+  right: -54px;
+  top: -53px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.intro__disscus2 {
+  width: 70px;
+  height: 70px;
+  background: white url(../img/discussion2.png) no-repeat 50% 50%;
+  border-radius: 50%;
+  position: absolute;
+  right: 410px;
+  top: -10px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.intro__disscus3 {
+  width: 70px;
+  height: 70px;
+  background: white url(../img/discussion3.png) no-repeat 50% 50%;
+  border-radius: 50%;
+  position: absolute;
+  right: 460px;
+  top: 180px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.intro__scores {
+  width: 212px;
+  height: 65px;
+  background: white url(../img/icon-person.png) no-repeat 5% center;
+  border-radius: 10px;
+  position: absolute;
+  right: 350px;
+  top: 403px;
+}
+.intro__likes {
+  width: 162px;
+  height: 112px;
+  background: white url(../img/icon-heart.png) no-repeat 50% 5%;
+  border-radius: 10px;
+  position: absolute;
+  right: -85px;
+  top: 264px;
+}
+.intro__likes-count {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #3d3d3f;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+.intro__likes-note {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.56);
+  margin: 0 auto;
+  text-align: center;
+}
+.intro__scores-line-shot {
+  width: 100px;
+  height: 4px;
+  background: #e4f3ff;
+  margin-top: 7px;
+}
+.intro__scores-line-long {
+  width: 120px;
+  height: 4px;
+  background: #e4f3ff;
+  margin-top: 7px;
+}
+.intro__score {
+  margin-top: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100px;
+}
+.intro__score-stars {
+  margin-right: 5px;
+  height: 14px;
+  width: 14px;
+  background: url(../img/icon-star.png) no-repeat;
+}
+.intro__scores-wrap {
+  padding-left: 70px;
+}
+
+.solution__wrapper {
+  margin: 0 135px 0 135px;
+  margin-bottom: 80px;
+}
+.solution__title {
+  margin-bottom: 52px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 70px;
+  color: #3e3e3e;
+  text-align: center;
+}
+.solution__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 105px;
+}
+.solution__step {
+  display: flex;
+  flex-direction: column;
+}
+.solution__step-pic1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(0, 158, 255, 0.1) 0%, rgba(56, 175, 255, 0.1) 100%),
+    url(../img/search-3711861-3105214\ 1.png) no-repeat center center;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+}
+.solution__step-pic2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(
+      51.35% 53.44% at 48.82% 46.56%,
+      rgba(255, 170, 6, 0.12) 0%,
+      rgba(255, 180, 26, 0.12) 100%
+    ),
+    url(../img/calendar-3543016-2969403\ 1.png) no-repeat center center;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+}
+.solution__step-pic3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #5aafff40 url(../img/online-healthcare-app-3856289-3212453\ 1.png) no-repeat center
+    center;
+
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+}
+.solution__link {
+  margin-bottom: 5px;
+  width: 80px;
+  margin: 0 auto;
+}
+.solution__step-title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3d3d3f;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.solution__step-disc {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.ad__wrapp {
+  margin: 0 135px 0 135px;
+  margin-bottom: 143px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.ad__pic {
+  width: 546px;
+  height: 582px;
+  background: url(../img/dr_khalib.png) no-repeat center bottom,
+    url(../img/dr_khalib_left.png) no-repeat 17% 28%,
+    url(../img/dr_khalib_down_circles.png) no-repeat center bottom,
+    url(../img/dr_khalib_down_blue.png) no-repeat center bottom;
+  background-size: contain contain contain;
+  position: relative;
+  margin: 0 auto 0 0;
+}
+.ad__text {
+  margin: 0 0 0 80px;
+}
+.ad__title {
+  margin-bottom: 24px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 50px;
+  color: #3e3e3e;
+  text-align: left;
+  max-width: 494px;
+}
+.ad__desc {
+  max-width: 506px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+  margin-bottom: 15px;
+}
+.ad__list {
+  margin-bottom: 24px;
+}
+.ad__list-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #3d3d3f;
+  margin-bottom: 14px;
+  list-style: none;
+  background: url(../img/li-item.png) no-repeat left center;
+  padding-left: 36px;
+}
+.ad__list-item:last-child {
+  margin-bottom: 0;
+}
+.ad__link {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.ad__button {
+  display: inline-block;
+  background: #40a3f8 url(../img/button_arrow.png) no-repeat right 20px center;
+  border-radius: 5px;
+  padding: 10px 42px 10px 19px;
+  transition: 0.1s all linear;
+}
+.ad__button:hover,
+.ad__button:active,
+.ad__button:focus {
+  background: #5cb2fd url(../img/button_arrow.png) no-repeat right 15px center;
+}
+.ad__review {
+  width: 230px;
+  height: 77px;
+  background: #ffffff url(../img/cheerful_doctor.png) no-repeat left 16px center;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding-left: 80px;
+  border: none;
+  padding-top: 22px;
+  position: absolute;
+  right: -18px;
+  top: 135px;
+}
+.ad__review-line-longer {
+  background: #e4f3ff;
+  width: 134px;
+  height: 4px;
+}
+.ad__review-line-long {
+  background: #e4f3ff;
+  width: 112px;
+  height: 4px;
+  margin: 10px 0 0 0;
+}
+.ad__review-line-shot {
+  background: #e4f3ff;
+  width: 94px;
+  height: 4px;
+  margin: 10px 0 0 0;
+}
+.ad__doc-rating-logo {
+  width: 92px;
+  height: 92px;
+  background: url(../img/love_doctor.png) no-repeat center top;
+  position: absolute;
+  bottom: 285px;
+  left: 5px;
+  z-index: 2;
+}
+.ad__doc-rating {
+  width: 270px;
+  height: 174px;
+  background: #fefefe;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 160px;
+  left: -84px;
+}
+.ad__doc-about {
+  height: 94px;
+  background: url(../img/dr_khalib_rating.png) no-repeat left -5px top 16px;
+  padding-left: 76px;
+  padding-top: 34px;
+  padding-right: 26px;
+}
+.ad__doc-rating-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+}
+.ad__doc-scores {
+  background: url(../img/dr_rait.png) no-repeat left top 2px;
+  padding-left: 15px;
+  margin-left: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3d3d3f;
+}
+.ad__doc-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3d3d3f;
+}
+.ad__doc-specialisation {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(61, 61, 63, 0.4);
+}
+.ad__doc-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+  margin: 0 33px 12px 33px;
+}
+.ad__doc-info-title {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a0a2b3;
+}
+.ad__doc-info-index {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #636481;
+}
+.ad__doc-place-of-work {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #3d3d3f;
+  text-align: center;
+  background: url(../img/location.png) no-repeat left 63px center;
+  padding-left: 15px;
+}
+
+.servises__wrap {
+  margin: 0 135px 0 135px;
+  margin-bottom: 121px;
+}
+.services__title {
+  margin-bottom: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3d3d3f;
+  text-align: center;
+}
+.servises__desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+.serises__boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 65px;
+  margin-bottom: 94px;
+  row-gap: 20px;
+}
+.servises__box {
+  /* width: 350px; */
+  height: 316px;
+  border-radius: 10px;
+  position: relative;
+  padding: 0 10px;
+}
+.servises__box-thumb {
+  width: 83px;
+  margin: 60px auto 20px auto;
+  display: block;
+}
+.servises__box-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #3d3d3f;
+  margin-bottom: 23px;
+  margin-top: 152px;
+}
+.servises__box-desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #999999;
+  max-width: 224px;
+  margin: 0 auto;
+}
+.servises__box_cardiology {
+  background: url(../img/servise_cardiol.png) no-repeat top 60px center,
+    linear-gradient(
+      138.88deg,
+      rgba(254, 254, 254, 0) -2.44%,
+      #f9f9f9 -2.43%,
+      rgba(254, 254, 254, 0.51) 98.26%
+    );
+  filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.05));
+}
+.servises__box_cardiology:hover,
+.servises__box_cardiology:active,
+.servises__box_cardiology:focus {
+  background: url(../img/servise_cardiol.png) no-repeat top 60px center,
+    linear-gradient(white 0, white 297px, #9fd1fb 298px);
+  box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.servises__box_pulmonology {
+  background: url(../img/servise_pulmon.png) no-repeat top 55px center,
+    linear-gradient(
+      138.88deg,
+      rgba(254, 254, 254, 0) -2.44%,
+      #f9f9f9 -2.43%,
+      rgba(254, 254, 254, 0.51) 98.26%
+    );
+  filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.05));
+}
+.servises__box_pulmonology:hover,
+.servises__box_pulmonology:active,
+.servises__box_pulmonology:focus {
+  background: url(../img/servise_pulmon.png) no-repeat top 55px center,
+    linear-gradient(white 0, white 297px, #9fd1fb 298px);
+  box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.servises__box_medicine {
+  background: url(../img/servise_medic.png) no-repeat top 50px center,
+    linear-gradient(
+      138.88deg,
+      rgba(254, 254, 254, 0) -2.44%,
+      #f9f9f9 -2.43%,
+      rgba(254, 254, 254, 0.51) 98.26%
+    );
+  filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.05));
+}
+.servises__box_medicine:hover,
+.servises__box_medicine:active,
+.servises__box_medicine:focus {
+  background: url(../img/servise_medic.png) no-repeat top 50px center,
+    linear-gradient(white 0, white 297px, #9fd1fb 298px);
+  box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.servises__box-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 316px;
+  opacity: 0.5;
+}
+.servises__decor {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+.servises__decor-item {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #dbe8ee;
+}
+.servises__decor-movie-item {
+  width: 51px;
+  height: 18px;
+  border-radius: 6px;
+  background: #40a3f8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.onlain-doctors__wrap {
+  margin: 0 0px 0 0px;
+  margin-bottom: 220px;
+}
+.onlain-doctors__title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3d3d3f;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.onlain-doctors__decor {
+  background: url(../img/decor.png) no-repeat;
+  height: 15px;
+  width: 81px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.online-doctors__desc {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+  max-width: 514px;
+  margin: 0 auto 70px auto;
+}
+.onlain-doctors__cards {
+  display: grid;
+  grid-template-columns: 100px repeat(4, 1fr) 100px;
+  column-gap: 35px;
+  margin-bottom: 58px;
+}
+.onlain-doctors__card {
+  height: 400px;
+  width: 267px;
+  background: linear-gradient(
+    138.88deg,
+    rgba(254, 254, 254, 0) -2.44%,
+    #f9f9f9 -2.43%,
+    rgba(254, 254, 254, 0.51) 98.26%
+  );
+  border: 1px solid #eeeff1;
+  filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.05));
+  border-radius: 10px;
+  padding: 10px 13px 0 13px;
+  margin: 0 auto;
+}
+.onlain-doctors__card_remove {
+  display: none;
+}
+.onlain-doctors__pic {
+  height: 249px;
+  background-size: cover;
+  margin: 0 auto 18px auto;
+  border-radius: 10px;
+}
+.onlain-doctors__pic_amanda {
+  background: url(../img/dr_Amanda.png) no-repeat center top -20px;
+}
+.onlain-doctors__pic_alisa {
+  background: url(../img/dr_Alisa.png) no-repeat center top -10px;
+}
+.onlain-doctors__pic_antony {
+  background: url(../img/dr_Antony.png) no-repeat center top -15px;
+}
+.onlain-doctors__pic_khelib {
+  background: url(../img/dr_Khelib.png) no-repeat center top -25px;
+}
+.onlain-doctors__cards-nav-left {
+  margin: auto 0 auto auto;
+  width: 34px;
+  height: 32px;
+  background: linear-gradient(
+      133.16deg,
+      rgba(154, 208, 255, 0.1065) 0%,
+      rgba(111, 188, 255, 0.1005) 112.21%
+    ),
+    url(../img/leaflet.png) no-repeat center center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.onlain-doctors__cards-nav-right {
+  margin: auto auto auto 0;
+  width: 34px;
+  height: 32px;
+  background: linear-gradient(
+      133.16deg,
+      rgba(154, 208, 255, 0.1065) 0%,
+      rgba(111, 188, 255, 0.1005) 112.21%
+    ),
+    url(../img/leaflet.png) no-repeat center center;
+  border-radius: 5px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.onlain-doctors__cards-nav-left:hover,
+.onlain-doctors__cards-nav-left:active,
+.onlain-doctors__cards-nav-left:focus {
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  background: #40a3f8 url(../img/leaflet_active.png) no-repeat center center;
+  transform: rotate(180deg);
+}
+.onlain-doctors__cards-nav-right:hover,
+.onlain-doctors__cards-nav-right:active,
+.onlain-doctors__cards-nav-right:focus {
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  background: #40a3f8 url(../img/leaflet_active.png) no-repeat center center;
+  transform: rotate(0deg);
+}
+
+.onlain-doctors__name {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #3d3d3f;
+}
+.onlain-doctors__prof {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #999999;
+  margin-bottom: 17px;
+}
+.onlain-doctors__social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 117px;
+  column-gap: 12px;
+  margin: 0 auto;
+}
+.onlain-doctors__more {
+  background: #40a3f8;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 195px;
+  height: 47px;
+  text-align: center;
+  line-height: 47px;
+  transition: all 0.1s linear;
+}
+.onlain-doctors__more:hover,
+.onlain-doctors__more:active,
+.onlain-doctors__more:focus {
+  background: #5db1fa;
+}
+.onlain-doctors__link {
+  line-height: 47px;
+  display: block;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+}
+
+.mob-apps__wrapp {
+  margin: 0 135px 0 0px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mob-apps__pic {
+  /* width: 546px; */
+  width: 684px;
+  height: 582px;
+  background: url(../img/Mockup.png) no-repeat left bottom -70px;
+}
+.mob-apps__text {
+  margin: 0 0 0 auto;
+}
+.mob-apps__title {
+  margin-bottom: 24px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 50px;
+  color: #3e3e3e;
+  text-align: left;
+  max-width: 503px;
+}
+.mob-apps__desc {
+  max-width: 496px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+  margin-bottom: 30px;
+}
+.mob-apps__links {
+  display: flex;
+  justify-content: space-between;
+  width: 310px;
+}
+.mob-apps__link-pic {
+  height: 46px;
+  width: auto;
+}
+
+.reviews__wrap {
+  margin: 0 135px 0 135px;
+  margin-bottom: 220px;
+}
+.reviews__title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3d3d3f;
+  margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 73px;
+}
+.reviews__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 33px;
+  row-gap: 20px;
+}
+.reviews__card-wrap {
+  position: relative;
+  padding-top: 15px;
+}
+.reviews__decor {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(../img/review_decor.png) no-repeat left top;
+  top: 0;
+  right: 40px;
+}
+.reviews__card {
+  height: 375px;
+  background: linear-gradient(132.1deg, rgba(255, 255, 255, 0.88) 0.65%, #fafafa 103.13%);
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.reviews__card-pic {
+  width: 63px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+.reviews__card-namebox {
+  padding: 0 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews__card-name {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: #3d3d3f;
+}
+.reviews__card-scores {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+}
+.reviews__scores-stars {
+  width: 15px;
+  height: 15px;
+  background: url(../img/icon-star.png) no-repeat center center;
+}
+.reviews__card-city {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #61cafe;
+  padding: 0 42px;
+  margin-bottom: 16px;
+}
+.reviews__card-review {
+  /* width: 347px; */
+  padding: 0 42px 0 42px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #454d5d;
+}
+
+.appointment__wrap {
+  margin: 0 135px 0 135px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: #40a3f8;
+  border-radius: 12px;
+}
+.appointment__box {
+  height: 340px;
+}
+.appointment__doctor {
+  height: 452px;
+  width: 600px;
+  position: absolute;
+  background: url(../img/smiling-young-female-doctor.png) no-repeat left top;
+  bottom: 0;
+  right: -85px;
+}
+
+.appointment__doctor-dummy {
+  height: 340px;
+  width: 600px;
+}
+.appointment__content {
+  padding-top: 82px;
+  padding-left: 118px;
+}
+.appointment__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: capitalize;
+  color: #ffffff;
+  width: 402px;
+  margin-bottom: 21px;
+}
+.appointment__button {
+  background: #ffffff;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  display: inline-block;
+  padding: 15px 18px;
+  transition: all 0.1s linear;
+}
+.appointment__button:hover,
+.appointment__button:active,
+.appointment__button:focus {
+  opacity: 0.8;
+}
+.appointment__link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #40a3f8;
+  text-decoration: none;
+}
+
+.footer .wrapper {
+  background-color: #fff;
+  /* height: 304px; */
+}
+.footer__wrapper {
+  margin: 0 135px 0 135px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 5px;
+}
+.footer .logo {
+  width: 202px;
+  margin-bottom: 12px;
+}
+.footer__contacts-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #646464;
+  margin-bottom: 16px;
+}
+.footer__social-media {
+  display: flex;
+  width: 176px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.footer__social-link {
+  width: 32px;
+}
+.footer__info {
+  margin-right: 120px;
+}
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 110px;
+  margin-right: 90px;
+  margin-bottom: 30px;
+}
+.footer__subscribe-desc {
+  width: 277px;
+}
+.footer__nav-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+  margin-bottom: 24px;
+}
+.footer__nav-item {
+  margin-bottom: 24px;
+}
+.footer__nav-link {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #646464;
+  text-decoration: none;
+  transition: all 0.1s linear;
+}
+.footer__nav-link:hover,
+.footer__nav-link:active,
+.footer__nav-link:focus {
+  /* color: #494848; */
+  color: #40a3f8;
+}
+.footer__subscribe {
+  margin-bottom: 20px;
+}
+.footer__subscribe-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+  margin-bottom: 20px;
+}
+.footer__subscribe-desc {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #646464;
+  margin-bottom: 15px;
+}
+.footer__subscribe-input {
+  background: #ffffff;
+  border: 1.1px solid #e1e2e4;
+  border-radius: 5px;
+  width: 292px;
+  height: 40px;
+  display: block;
+  margin-bottom: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 20px;
+  outline: none;
+}
+.footer__subscribe-but::placeholder {
+  font-family: "Roboto";
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(117, 117, 117, 0.65);
+}
+.footer__subscribe-but {
+  background: #40a3f8;
+  border: 1.1px solid #e1e2e4;
+  border-radius: 5px;
+  width: 292px;
+  height: 40px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.footer__subscribe-but:hover,
+.footer__subscribe-but:active,
+.footer__subscribe-but:focus {
+  background: #5eb2fc;
+  border: 1.1px solid #f5f7f9;
+}
+.footer__line {
+  background: #969696;
+  opacity: 0.2;
+  height: 2px;
+  margin: 0 auto;
+}
+.footer__under-line {
+  height: 22px;
+  max-width: 1440px;
+}
+.footer__wrap-down {
+  margin: 0 auto;
+  max-width: 1440px;
+  background: #f4fbfa;
+  height: 54px;
+}
+.footer__submenu-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 25px;
+  margin: 0 56px 0 57px;
+}
+.footer__sublist {
+  padding: 10px 150px 0 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__submenu-link,
+.footer__copyright {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #646464;
+  transition: 0.1s all linear;
+}
+.footer__submenu-link:hover,
+.footer__submenu-link:active,
+.footer__submenu-link:focus {
+  color: #171717;
+}
+
+.header__burger {
+  margin: auto 0;
+  width: 32px;
+  height: 30px;
+  background: transparent;
+  position: relative;
+  display: none;
+}
+.burg__line {
+  width: 100%;
+  height: 3px;
+  background: white;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s linear;
+}
+.burg__line_first {
+  top: 0;
+}
+.burg__line_fourth {
+  bottom: 0;
+}
+.burg__line_second,
+.burg__line_third {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger_active .burg__line_first,
+.burger_active .burg__line_fourth {
+  opacity: 0;
+}
+.burger_active .burg__line_second {
+  transform: rotate(45deg);
+}
+.burger_active .burg__line_third {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1401px) {
+  .intro__box-title {
+    order: 2;
+    margin-top: 230px;
+    margin-right: 0;
+  }
+  .intro__wrapper {
+    justify-content: center;
+  }
+  .intro {
+    background: url(../img/pleased-young-female-doctor.png) no-repeat center bottom,
+      url(../img/image_shape.png) no-repeat left 57% top 65%,
+      url(../img/intro_shadow_down.png) no-repeat right bottom,
+      url(../img/intro_shadow_up.png) no-repeat right top,
+      url(../img/intro_shadow_left_up.png) no-repeat left top,
+      url(../img/intro-background.jpg) no-repeat right top;
+    margin-bottom: 480px;
+  }
+  .ad__title {
+    margin-top: 25px;
+  }
+  .ad__wrapp {
+    justify-content: center;
+  }
+  .ad__pic {
+    margin: 0;
+  }
+  .mob-apps__title {
+    margin-top: 20px;
+  }
+  .onlain-doctors__cards {
+    grid-template-columns: 100px repeat(3, 1fr) 100px;
+  }
+  .onlain-doctors__card:nth-child(5) {
+    display: none;
+  }
+
+  .mob-apps__wrapp {
+    justify-content: center;
+  }
+  .reviews__card {
+    height: 475px;
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  .footer__wrapper {
+    margin: 0 55px 0 55px;
+  }
+  .reviews__wrap {
+    margin: 0 55px 120px 55px;
+  }
+  .appointment__wrap {
+    margin: 0 55px 0 55px;
+  }
+  .mob-apps__wrapp {
+    margin: 0 0px 120px 0px;
+  }
+  .onlain-doctors__wrap {
+    margin: 0 0px 80px 0px;
+  }
+  .servises__wrap {
+    margin: 0 55px 100px 55px;
+  }
+  .ad__wrapp {
+    margin: 0 55px 100px 55px;
+  }
+  .solution__wrapper {
+    margin: 0 55px 80px 55px;
+  }
+  .intro__wrapper {
+    margin: 0 55px 0 55px;
+  }
+  .header__wrapper {
+    padding: 16px 55px 18px 55px;
+  }
+  .header__nav {
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 100px 50px 50px 200px;
+    transform: translateX(100%);
+    z-index: 20;
+    transition: all 0.5s;
+    background: #171717;
+  }
+  .header__button {
+    padding: 30px 35px 30px 35px;
+    background: #40a3f8;
+    border-radius: 15px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 45px;
+    color: #ffffff;
+    border: none;
+    transition: 0.1s all linear;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .header__elem {
+    width: 100%;
+  }
+  .header__nav-link {
+    color: whitesmoke;
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .header__nav_active {
+    transform: translateX(0%);
+    transition: all 0.5s;
+  }
+  .header__burger {
+    display: block;
+    z-index: 21;
+  }
+  .intro {
+    background: url(../img/pleased-young-female-doctor.png) no-repeat center bottom,
+      url(../img/image_shape.png) no-repeat left 60% top 65%,
+      url(../img/intro_shadow_down.png) no-repeat right bottom,
+      url(../img/intro_shadow_up.png) no-repeat right top,
+      url(../img/intro_shadow_left_up.png) no-repeat left top,
+      url(../img/intro-background.jpg) no-repeat right top;
+    margin-bottom: 480px;
+  }
+  .onlain-doctors__cards {
+    grid-template-columns: 100px repeat(2, 1fr) 100px;
+  }
+  .onlain-doctors__card:nth-child(4) {
+    display: none;
+  }
+  .reviews__card-wrap {
+    grid-column: span 3;
+  }
+  .reviews__card {
+    height: auto;
+  }
+  .solution__steps {
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+  .serises__boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    margin-bottom: 94px;
+    row-gap: 20px;
+  }
+  .footer__wrapper {
+    margin: 0 65px 0 65px;
+  }
+}
+@media screen and (max-width: 841px) {
+  .intro {
+    background: url(../img/pleased-young-female-doctor.png) no-repeat center bottom,
+      url(../img/image_shape.png) no-repeat left 70% top 65%,
+      url(../img/intro_shadow_down.png) no-repeat right bottom,
+      url(../img/intro_shadow_up.png) no-repeat right top,
+      url(../img/intro_shadow_left_up.png) no-repeat left top,
+      url(../img/intro-background.jpg) no-repeat right top;
+    margin-bottom: 480px;
+  }
+
+  .onlain-doctors__cards {
+    grid-template-columns: 100px 1fr 100px;
+  }
+  .onlain-doctors__card:nth-child(3) {
+    display: none;
+  }
+  .appointment__content {
+    padding: 42px 55px 0 55px;
+  }
+  .serises__boxes {
+    padding: 0 60px;
+  }
+  .servises__box {
+    grid-column: span 3;
+  }
+  /* .footer__wrapper {
+    justify-content: center;
+  }
+  .footer__info {
+    margin-right: 0px;
+  } */
+  .footer__sublist {
+    justify-content: center;
+  }
+  .footer__wrap-down {
+    height: 64px;
+  }
+  /* .footer__nav {
+    column-gap: 140px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  } */
+  .footer__submenu-link,
+  .footer__copyright {
+    margin-bottom: 10px;
+  }
+  .footer__submenu-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+    margin: 0 56px 0px 57px;
+  }
+  .footer__sublist {
+    padding: 10px 50px 0 50px;
+  }
+  .intro__title {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+  .intro__form-wrap {
+    /* width: 566px; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .solution__title {
+    margin-bottom: 42px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .ad__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .servises__desc {
+    margin-bottom: 35px;
+  }
+  .onlain-doctors__title {
+    padding: 0 55px;
+  }
+  .onlain-doctors__title {
+    padding: 0 55px;
+  }
+  .appointment__title {
+    font-size: 30px;
+    line-height: 37px;
+    width: auto;
+    margin-bottom: 18px;
+  }
+  .ad__text {
+    margin: 0;
+  }
+  .intro__subtitle {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .solution__step-disc {
+    font-size: 16px;
+  }
+  .intro__disscus1 {
+    display: none;
+  }
+  .intro__likes {
+    display: none;
+  }
+  .intro__scores {
+    display: none;
+  }
+  .intro__disscus3 {
+    display: none;
+  }
+  .intro__disscus2 {
+    display: none;
+  }
+  .ad__doc-rating-logo {
+    display: none;
+  }
+  .ad__doc-rating {
+    display: none;
+  }
+  .ad__review {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .mob-apps__pic {
+    background: url(../img/Mockup.png) no-repeat center bottom -70px;
+  }
+}
