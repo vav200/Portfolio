@@ -1,0 +1,118 @@
+// main: styleless.less
+.cost-gaz {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #2c3237;
+  &__wrap {
+    margin: 0 auto;
+    padding: 45px 50px;
+    max-width: 1180px;
+    position: relative;
+  }
+  &__title {
+    text-align: center;
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #2194ff;
+    margin-bottom: 50px;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+  }
+  &__info {
+    padding-top: 27px;
+    &-title {
+      font-family: "Russo One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      color: #f1f1f1;
+    }
+    &-cost {
+      font-family: "Russo One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #2194ff;
+      margin-bottom: 20px;
+    }
+    &-desc {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #f1f1f1;
+      width: 253px;
+      margin-bottom: 28px;
+    }
+  }
+  &__oder-gaz {
+    width: 155px;
+    height: 43px;
+    background: #2194ff;
+    border-radius: 50px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    &:hover,
+    &:active,
+    &:focus {
+      background: #0f6abe;
+      border: none;
+      color: white;
+    }
+  }
+  &__ratio-wrap {
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+  }
+  &__ratio-elem {
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: rgba(241, 241, 241, 0.7);
+    &-desc {
+      font-family: "Russo One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: rgba(241, 241, 241, 0.7);
+    }
+  }
+  &__pic {
+    width: 100%;
+    padding-right: 20px;
+  }
+  &__pointer {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: url(../img/pointer_big.svg) no-repeat center bottom,
+      url(../img/pointer_medium.svg) no-repeat center bottom 20px,
+      url(../img/pointer_little.svg) no-repeat center bottom 40px;
+  }
+}

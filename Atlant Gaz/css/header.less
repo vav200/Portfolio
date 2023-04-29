@@ -1,0 +1,161 @@
+// main: styleless.less
+.header {
+  /* padding: 18px 0 72px 420px; */
+  /* background-color: #2d2d2d; */
+  padding: 18px 0 72px 50px;
+  max-width: 1550px;
+  margin: 0 0 0 auto;
+  font-size: 16px;
+  &__up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 36px;
+    &-logo-wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      padding-right: 50px;
+    }
+    &-logo {
+      height: 100px;
+      width: 270px;
+      background: url(../img/Logo.svg) no-repeat left top;
+      margin-right: 24px;
+    }
+    &-logo-ad {
+      font-family: "Open Sans";
+      padding: 0 0 0 24px;
+      margin-bottom: 20px;
+      max-width: 150px;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #2194ff;
+      border-left: 2px solid white;
+    }
+    &-contacts {
+      margin-left: 422px;
+      padding-right: 50px;
+    }
+    &-tel {
+      font-family: "Russo One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #f1f1f1;
+    }
+    &-link {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-decoration-line: underline;
+      color: #2194ff;
+    }
+  }
+  &__down {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    color: #f1f1f1;
+    background: url(../img/header_auto.png) no-repeat right center;
+    transition: all 0.5s linear;
+    &-weather {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      width: 500px;
+    }
+  }
+  &__logo-weather-sun {
+    /* width: 80px;
+     height: 20px; */
+    background: url(../img/moon.png) no-repeat left top,
+      url(../img/arrow.svg) no-repeat left 30px top, url(../img/sun.svg) no-repeat left 60px top;
+    padding-top: 30px;
+  }
+  &__logo-weather-snow {
+    margin-left: 35px;
+    /* width: 80px;
+    height: 20px; */
+    background: url(../img/cloudy.png) no-repeat left top,
+      url(../img/arrow.svg) no-repeat left 35px top,
+      url(../img/snowflake.svg) no-repeat left 60px top;
+    padding-top: 30px;
+  }
+  &__logo-weather-desc {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #f1f1f1;
+  }
+  &__title {
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 63px;
+    color: #2194ff;
+    margin-bottom: 14px;
+    max-width: 430px;
+  }
+  &__subtitle {
+    background: url(../img/frame_arrow.svg) no-repeat right bottom;
+    height: 100px;
+    width: 430px;
+    padding-right: 95px;
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f1f1f1;
+  }
+  &__button {
+    width: 395px;
+    height: 87px;
+    background: url(../img/but_bottom.png) no-repeat center bottom 10px,
+      url(../img/but_top.png) no-repeat center top 10px,
+      url(../img/but_contur.png) no-repeat center center, url(../img/but_all.png);
+    text-align: center;
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #f1f1f1;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+    border-radius: 11px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    &:hover,
+    &:active,
+    &:focus {
+      /* background: #2194ff;
+      font-size: 23px; */
+      opacity: 0.85;
+    }
+    &-desc {
+      text-align: center;
+      width: 395px;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #f1f1f1;
+    }
+  }
+}

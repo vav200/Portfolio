@@ -1,0 +1,352 @@
+.header {
+  /* padding: 18px 0 72px 420px; */
+  /* background-color: #2d2d2d; */
+  padding: 18px 0 72px 50px;
+  max-width: 1550px;
+  margin: 0 0 0 auto;
+  font-size: 16px;
+}
+.header__up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 36px;
+}
+.header__up-logo-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-right: 50px;
+}
+.header__up-logo {
+  height: 100px;
+  width: 270px;
+  background: url(../img/Logo.svg) no-repeat left top;
+  margin-right: 24px;
+}
+.header__up-logo-ad {
+  font-family: "Open Sans";
+  padding: 0 0 0 24px;
+  margin-bottom: 20px;
+  max-width: 150px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2194ff;
+  border-left: 2px solid white;
+}
+.header__up-contacts {
+  margin-left: 422px;
+  padding-right: 50px;
+}
+.header__up-tel {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f1f1f1;
+}
+.header__up-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #2194ff;
+}
+.header__down {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  color: #f1f1f1;
+  background: url(../img/header_auto.png) no-repeat right center;
+  transition: all 0.5s linear;
+}
+.header__down-weather {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  width: 500px;
+}
+.header__logo-weather-sun {
+  /* width: 80px;
+     height: 20px; */
+  background: url(../img/moon.png) no-repeat left top, url(../img/arrow.svg) no-repeat left 30px top, url(../img/sun.svg) no-repeat left 60px top;
+  padding-top: 30px;
+}
+.header__logo-weather-snow {
+  margin-left: 35px;
+  /* width: 80px;
+    height: 20px; */
+  background: url(../img/cloudy.png) no-repeat left top, url(../img/arrow.svg) no-repeat left 35px top, url(../img/snowflake.svg) no-repeat left 60px top;
+  padding-top: 30px;
+}
+.header__logo-weather-desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #f1f1f1;
+}
+.header__title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 63px;
+  color: #2194ff;
+  margin-bottom: 14px;
+  max-width: 430px;
+}
+.header__subtitle {
+  background: url(../img/frame_arrow.svg) no-repeat right bottom;
+  height: 100px;
+  width: 430px;
+  padding-right: 95px;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f1f1f1;
+}
+.header__button {
+  width: 395px;
+  height: 87px;
+  background: url(../img/but_bottom.png) no-repeat center bottom 10px, url(../img/but_top.png) no-repeat center top 10px, url(../img/but_contur.png) no-repeat center center, url(../img/but_all.png);
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #f1f1f1;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+  border-radius: 11px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+.header__button:hover,
+.header__button:active,
+.header__button:focus {
+  /* background: #2194ff;
+      font-size: 23px; */
+  opacity: 0.85;
+}
+.header__button-desc {
+  text-align: center;
+  width: 395px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #f1f1f1;
+}
+.main {
+  background-color: #2d2d2d;
+}
+.cost-gaz {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #2c3237;
+}
+.cost-gaz__wrap {
+  margin: 0 auto;
+  padding: 45px 50px;
+  max-width: 1180px;
+  position: relative;
+}
+.cost-gaz__title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #2194ff;
+  margin-bottom: 50px;
+}
+.cost-gaz__box {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 20px;
+}
+.cost-gaz__info {
+  padding-top: 27px;
+}
+.cost-gaz__info-title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #f1f1f1;
+}
+.cost-gaz__info-cost {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2194ff;
+  margin-bottom: 20px;
+}
+.cost-gaz__info-desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #f1f1f1;
+  width: 253px;
+  margin-bottom: 28px;
+}
+.cost-gaz__oder-gaz {
+  width: 155px;
+  height: 43px;
+  background: #2194ff;
+  border-radius: 50px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+.cost-gaz__oder-gaz:hover,
+.cost-gaz__oder-gaz:active,
+.cost-gaz__oder-gaz:focus {
+  background: #0f6abe;
+  border: none;
+  color: white;
+}
+.cost-gaz__ratio-wrap {
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+}
+.cost-gaz__ratio-elem {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: rgba(241, 241, 241, 0.7);
+}
+.cost-gaz__ratio-elem-desc {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(241, 241, 241, 0.7);
+}
+.cost-gaz__pic {
+  width: 100%;
+  padding-right: 20px;
+}
+.cost-gaz__pointer {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: url(../img/pointer_big.svg) no-repeat center bottom, url(../img/pointer_medium.svg) no-repeat center bottom 20px, url(../img/pointer_little.svg) no-repeat center bottom 40px;
+}
+.benefits {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.benefits__wrap {
+  margin: 0 auto;
+  padding: 57px 50px;
+  max-width: 1180px;
+}
+.benefits__title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #f1f1f1;
+  margin-bottom: 35px;
+}
+.benefits__box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 50px;
+}
+.benefits__item-pic {
+  width: auto;
+  margin: 0 auto 8px auto;
+  display: block;
+  height: 80px;
+}
+.benefits__item-title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #2194ff;
+  max-width: 300px;
+  margin: 0 auto 14px auto;
+}
+.benefits__item-desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #f1f1f1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.benefits__ad-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: url(../img/benefits_car_add.png) no-repeat left -10px top;
+}
+.benefits__ad-dummy {
+  width: 600px;
+}
+.benefits__ad-title-blue {
+  color: #2194ff;
+}
+.benefits__ad-conclusion {
+  width: 530px;
+  height: 35px;
+  background: #2194ff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 35px;
+  color: #f1f1f1;
+  text-align: center;
+  letter-spacing: 1px;
+}
