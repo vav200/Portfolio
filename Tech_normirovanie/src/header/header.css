@@ -1,0 +1,14 @@
+.logo__box {
+  background-color: rgb(95, 95, 147);
+}
+.logo__img {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+.titlelocation {
+  top: 30px;
+  left: 40px;
+  color: white;
+  z-index: 2;
+}
