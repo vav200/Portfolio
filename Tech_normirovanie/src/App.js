@@ -7,7 +7,7 @@ import Vnutrishlif from "./main/shlifovalnie/Vnutrishlif";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 
-function App(props) {
+function App() {
   return (
     <>
       <div className="container">
@@ -16,17 +16,7 @@ function App(props) {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/main/shlifovalnie/Krugloshlif" element={<Krugloshlif />} />
-            <Route
-              path="/main/shlifovalnie/Ploskoshlif"
-              element={
-                <Ploskoshlif
-                  getProfiles={props.getProfiles}
-                  getTimeInstall={props.getTimeInstall}
-                  getMainTime={props.getMainTime}
-                  getCharacteristics={props.getCharacteristics}
-                />
-              }
-            />
+            <Route path="/main/shlifovalnie/Ploskoshlif" element={<Ploskoshlif />} />
             <Route path="/main/shlifovalnie/Vnutrishlif" element={<Vnutrishlif />} />
           </Routes>
         </BrowserRouter>
